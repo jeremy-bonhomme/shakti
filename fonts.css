@@ -1,0 +1,36 @@
+
+@font-face {
+    font-family: 'cyberfall';
+    src: url(fonts/cyberfall-webfont.eot);
+    src: url(fonts/cyberfall-webfont.eot?#iefix) format('embedded-opentype'),
+         url(fonts/cyberfall-webfont.woff2) format('woff2'),
+         url(fonts/cyberfall-webfont.woff) format('woff'),
+         url(fonts/cyberfall-webfont.ttf) format('truetype'),
+         url(fonts/cyberfall-webfont.svg#cyberfallregular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OCR A Std';
+    src: url(fonts/ocr_a_std-webfont.eot);
+    src: url(fonts/ocr_a_std-webfont.eot?#iefix) format('embedded-opentype'),
+         url(fonts/ocr_a_std-webfont.woff2) format('woff2'),
+         url(fonts/ocr_a_std-webfont.woff) format('woff'),
+         url(fonts/ocr_a_std-webfont.ttf) format('truetype'),
+         url(fonts/ocr_a_std-webfont.svg#ocr_a_stdregular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url(fonts/roboto-regular-webfont.eot);
+    src: url(fonts/roboto-regular-webfont.eot?#iefix) format('embedded-opentype'),
+         url(fonts/roboto-regular-webfont.woff2) format('woff2'),
+         url(fonts/roboto-regular-webfont.woff) format('woff'),
+         url(fonts/roboto-regular-webfont.ttf) format('truetype'),
+         url(fonts/roboto-regular-webfont.svg#robotoregular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

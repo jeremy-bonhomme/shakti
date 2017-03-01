@@ -1,0 +1,432 @@
+/* body*/
+html {
+	margin:0;
+	padding:0;
+}
+
+body {
+	margin: 0;
+	padding:0;
+}
+
+header {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+}
+
+h1 {
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	color: #607890;
+	font-family: 'cyberfall', sans-serif;
+	font-size: 28px;
+}
+
+nav {
+	width: 100%;
+	height: 50px;
+	background-color: #033649;
+	margin: 0 auto;
+	text-align: center;
+	display: inline-block;
+	position: fixed;
+	}
+
+.one {
+	font-size: 28px;
+	color: #A9C1D9;
+}
+
+/*scrollbar*/
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-moz-scrollbar {
+    width: 6px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(169, 193, 217); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-moz-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(169, 193, 217); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(169, 193, 217); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,1); 
+}
+
+::-moz-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(169, 193, 217); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,1); 
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4); 
+}
+
+::-moz-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4); 
+}
+
+/*play/pause musique*/
+#btn {
+    position: fixed;
+    right: 0;
+    top: 100px;
+    width: 40px;
+    height: 40px;
+    background: url(sprites/lecture.png) no-repeat center;
+    background-color: #033649;
+    border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+    border: 1px solid #033649;
+    outline: none;
+    transition: all 0.3s;
+}
+
+#btn:hover {
+	background: url(sprites/pause.png) no-repeat center #A9C1D9;
+	border: 1px solid #A9C1D9;
+}
+
+/*dialogue suivant*/
+.tab {
+	display: none;
+	position: fixed;
+	bottom: 40px;
+	margin: 0 10% 0 10%;
+	width: 80%;
+	height: 150px;
+}
+
+.scroll {
+	width: 100%;
+	height: 150px;
+	background: rgba(3, 54, 73, 0.8) no-repeat;
+	overflow: auto;
+	border-top-left-radius: 50px;
+}
+
+.tab:target {
+	display: block;
+}
+
+/*div sprite*/
+.sprite {
+	position: absolute;
+	bottom: 190px;
+	margin: 0 10% 0 10%;
+	width: 30%;
+	height: 50%;
+}
+
+.sprite2 {
+	position: absolute;
+	bottom: 190px;
+	right: 0;
+	margin: 0 10% 0 10%;
+	width: 30%;
+	height: 50%;
+}
+
+/*sprites delphine*/
+#Delphine,
+#Delphine3 {
+    position: absolute;
+	max-width: 100%;
+	max-height: 100%;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    left: 0;
+    bottom: 0;
+    display:none;
+    opacity:1;
+}
+
+#Delphine.anime,
+#Delphine3.anime,
+#Delphine2.anime {
+    display: block;
+    animation-name: mouvement1;
+    animation-duration: 1.5s;
+    -webkit-animation-name: mouvement1;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-name: mouvement1;
+    -moz-animation-duration: 1.5s;
+    -o-animation-name: mouvement1;
+    -o-animation-duration: 1.5s;
+}
+
+#Delphine.anime2,
+#Delphine3.anime2,
+#Delphine2.anime2 {
+    display: none;
+}
+
+#Delphine2,
+#Stanley2 {
+	position: absolute;
+	max-width: 100%;
+	max-height: 100%;
+	transform: none;
+	-webkit-transform: none;
+	-moz-transform: none;
+	-o-transform: none;
+	left: 0;
+	bottom: 0;
+	opacity:1;
+}
+
+/*sprite Gideon etc*/
+#Gideon,
+#Skylar,
+#Grunt,
+#Main,
+#Infirmiere,
+#Booker,
+#Stanley,
+#Universe {
+    position: absolute;
+	max-width: 100%;
+	max-height: 100%;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    right: 0;
+    bottom: 0;
+    display:none;
+    opacity:1;
+}
+
+#Gideon.anime3,
+#Skylar.anime3,
+#Grunt.anime3,
+#Main.anime3,
+#Infirmiere.anime3,
+#Booker.anime3,
+#Stanley.anime3,
+#Universe.anime3 {
+    display: block;
+    animation-name: mouvement1;
+    animation-duration: 1.5s;
+    -webkit-animation-name: mouvement1;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-name: mouvement1;
+    -moz-animation-duration: 1.5s;
+    -o-animation-name: mouvement1;
+    -o-animation-duration: 1.5s;
+}
+
+#Gideon.anime4,
+#Skylar.anime4,
+#Grunt.anime4,
+#Main.anime4,
+#Infirmiere.anime4,
+#Boooker.anime4,
+#Stanley.anime4,
+#Universe.anime4 {
+    display: none;
+}
+
+#Gideon2 {
+	position: absolute;
+	max-width: 100%;
+	max-height: 100%;
+	transform: none;
+	-webkit-transform: none;
+	-moz-transform: none;
+	-o-transform: none;
+	right: 0;
+	bottom: 0;
+	opacity:1;
+}
+
+#Gideon2.anime4 {
+	display: none;
+}
+
+/*animation sprite*/
+@keyframes mouvement1 {
+	0% {
+   		transform: translate(-100px);
+   		opacity: 0;
+   	}
+}
+
+@-webkit-keyframes mouvement1 {
+	0% {
+   		-webkit-transform: translate(-100px);
+   		opacity: 0;
+   	}
+}
+
+@-moz-keyframes mouvement1 {
+	0% {
+		-moz-transform: translate(-100px);
+   		opacity: 0;
+  	}
+}
+
+-o-keyframes mouvement1 {
+	0% {
+   		-o-transform: translate(-100px);
+   		opacity: 0;
+   	}
+}
+
+/*texte boîte de dialogue*/
+.prenom {
+	padding:5px;
+	margin-top: 2px;
+	margin-left: 35px;
+	font-family: 'cyberfall', sans-serif;
+	font-size: 17px;
+	color: #607890;
+}
+
+p {
+	font-family: 'OCR A Std',sans-serif;
+	font-size: 15px;
+	color: #A9C1D9;
+	margin-left: 40px;
+	margin-right: 10px;
+}
+
+.italic {
+	font-style:italic;
+}
+
+/*Bouton suivant-précédent*/
+body div .suivant {
+	position: absolute;
+	display: block;
+	top: 37px;
+	right: -80px;
+	height: 80px;
+	max-width: 80px;
+}
+
+body div .precedent {
+	position: absolute;
+	display: block;
+	left: -80px;
+	top: 37px;
+	height: 80px;
+	width: 80px;
+}
+
+.fleche,
+.fleche2 {
+	position: relative;
+	width: 80px;
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*Menu*/
+.menu1 {
+	margin-right: 45px;
+	display: inline-block;
+	color : #A9C1D9;
+	font-size: 18px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	cursor: default;
+}
+
+.menu2 {
+	margin-left: -5px;
+	color: #607890;
+	text-align: center;
+	display: inline-block;
+	font-size: 18px;
+	height: 20px;
+	line-height: 30px;
+}
+
+#menu, #menu ul
+{
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    line-height: 21px;
+
+}
+
+
+li {
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	display: inline-block;
+	font-family: 'cyberfall', sans-serif;
+}
+nav ul ul li {
+	display:inline-block;
+	width: 150px;
+}
+
+
+nav ul li .menu1:hover {
+	color: #607890;
+}
+
+nav ul li .menu2:hover {
+	color: #A9C1D9;
+}
+
+/* Contenu des listes */
+#menu a {
+    display: block;
+    padding: 0;
+    background: #033649;
+    color: #A9C1D9;
+    text-decoration: none;
+}
+
+#menu .chichi {
+	display: block;
+    text-decoration: none;
+    height: 40px;
+}
+
+#menu li ul {
+	margin: -5px 0 0 -100px;
+    position: absolute;
+    width: 310px;
+    background: #033649;
+    left: -999em; /*sous-liste invisible*/
+    cursor: default;
+}
+
+/*passage souris menu déroulant*/
+#menu li ul a:hover {
+    color: #033649;
+    background: #A9C1D9;
+}
+
+#menu li:hover ul, #menu li li:hover ul, #menu li.sfhover ul, #menu li li.sfhover ul {
+        left: auto;
+        min-height: 0;
+}
